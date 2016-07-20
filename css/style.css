@@ -1,0 +1,76 @@
+body { padding-top: 60px; }
+
+.profilbild_image{
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00d600;
+}
+
+.artikel-metadata{
+    margin-top: 20px;
+}
+
+.artikelbild{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.bildunterschrift{
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.artikelLink:hover, .artikelLink:visited, .artikelLink:link, .artikelLink:active {
+    text-decoration: none;
+    display: block;
+    color: crimson;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.artikelLink:hover{
+    color: forestgreen;
+}
+
+.blogFeld{
+    text-align: center;
+}
+
+.videoContainer{
+  margin-bottom: 30px;
+  position: relative; 
+  padding-bottom: 56.25%; /* ratio 16x9 */
+  height: 0; 
+  overflow: hidden; 
+  width: 100%;
+  height: auto;
+}
+
+.videoContainer iframe{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+}
+
+#button{
+    padding-top: 0px;
+    border: none;
+}
+
+.impressum{
+    margin-top: 40px;
+}
+
+.impressumText{
+    font-size: 30px;
+}
+
+.impressumName{
+    font-size: 40px;
+}
