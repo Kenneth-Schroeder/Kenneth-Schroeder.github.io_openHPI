@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html class="welcomeHTML" lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -25,12 +25,10 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="welcomeBody">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-
         <div class="container">
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <!-- screen reader haben Probleme, wenn nicht jede Eingabe ein Label hat -->
@@ -54,32 +52,32 @@
         </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <article class="inhalt">
-            <h1> Seminarkursprojekt "LED-Cube" </h1>
-            <p class="lead"> 
-              Der Seminarkurs ist seit dem Schuljahr 2014/15 ein verbindlicher Grundkurs im Land Brandenburg. Er soll der Wissenschaftspropädeutik dienen, also auf das Studium hinführen. Welche Erfahrungen ich mit diesem Fach, im Schwerpunkt Informatik, gemacht habe und mit welchem Projekt ich mich dabei beschäftigt habe, kannst du in diesem Artikel lesen.
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Willkommen</h1>
+            <p class="lead">Dies ist eine Beispiels-Willkommensseite.</p>
+            <p class="lead">
+              <a href="artikel_02_moeglichkeiten_mit_bootstrap.html" class="btn btn-lg btn-welcome">Zurück</a>
             </p>
-            <small class="artikel-metadata">
-              Von ... am 24. Juli 2016 veröffentlicht
-            </small>
-            <img src="../images/LEDs.jpg" class="artikelbild img-responsive">
-            <p class="bildunterschrift">
-                LEDs als Hauptbestandteil meiner Arbeit
-            </p>
-            <p>
-              ---- Artikel ----
-            </p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube-nocookie.com/embed/jEZ0fgb4yMg?rel=0" frameborder="0" allowfullscreen> </iframe>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p> Beispiel Startseite für <a class="welcomeLink" href="../index.html">Meinen Blog</a>.</p>
             </div>
-          </article>
+          </div>
+
         </div>
+
       </div>
+
     </div>
-    <!-- /.container -->
+
     <!-- Bootstrap Haupt-JavaScript -->
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>

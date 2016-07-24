@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--  Dokumentkompatibilitätsmodus für IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <title>Meine erste eigene Website</title>
+
+    <!-- Bootstrap Haupt-CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap Theme-CSS -->
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Eigenes CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <!-- screen reader haben Probleme, wenn nicht jede Eingabe ein Label hat -->
+                    <span class="sr-only">Navigation ein/ausblenden</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Mein Blog</a>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="../ueber-mich.html">Über mich</a></li>
+                    <li><a href="../impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <article class="inhalt">
+                    <h1> Möglichkeiten mit Bootstrap </h1>
+                    <p class="lead">
+                        Bootstrap ist ein Framework, dass in dem openHPI Kurs "Wie designe ich meine eigene Homepage?" vorgestellt wurde, um eigene responsible Websiten zu erstellen. Dabei beinhaltet Bootstrap viel mehr Möglichkeiten, als in dem MOOC vorgestellt wurden. Wenn du Interesse an einigen weiteren Beispielen hast, kannst du einen Blick in diesen Artikel werfen!
+                    </p>
+                    <small class="artikel-metadata">
+              Von ... am 24. Juli 2016 veröffentlicht
+            </small>
+                    <img src="../images/Code.png" class="artikelbild img-responsive">
+                    <p class="bildunterschrift">
+                        HTML Code
+                    </p>
+                    <h2 class="headerWithSpacing">Das Carousel</h2>
+                    <p>
+                        Ein Beispiel, für eine weitere Möglichkeit, die mit Bootstrap realisiert werden kann, ist das "Carousel". Dabei handelt es sich um einen Slider, dessen Hintergrundbilder und kurzer Infotext angepasst werden können, um auf übersichtliche Art und Weise auf weitere Seiten(-abschnitte) zu verlinken.
+                    </p>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="first-slide slide" src="../images/Sliderimage.jpg" alt="First slide">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h1>Springe zu "Die Willkommensseite"</h1>
+                                        <p>Wenn du hier klickst, gelangst du nach unten zu dem Abschnitt "Die Willkommensseite"</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#welcome" role="button">LOS</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="second-slide slide" src="../images/Sliderimage.jpg" alt="Second slide">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h1>Springe zu "Warnungen"</h1>
+                                        <p>Wenn du hier klickst, gelangst du nach unten zu dem Abschnitt "Warnungen"</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#alerts" role="button">Auf gehts!</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="third-slide slide" src="../images/Sliderimage.jpg" alt="Third slide">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h1>Zurück zur Startseite</h1>
+                                        <p>Wenn du hier klickst, gelangst du zurück zur Blogübersicht</p>
+                                        <p><a class="btn btn-lg btn-primary" href="../index.html" role="button">Blog</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- /.carousel -->
+                    <!-- /.DIE WILLKOMMENSSEITE -->
+                    <span id="welcome"> </span>
+                    <h2 class="headerWithSpacing">Die Willkommensseite</h2>
+                    <p>
+                        Mit einer Willkommensseite, kann man einen Besucher auf der eigenen Homepage begrüßen, ohne ihn direkt mit Informationen zu fluten.
+                    </p>
+                    <a class="linkToWelcome" href="welcomePage.html">
+                        <h3>Beispiel</h3> </a>
+                    <img src="../images/welcomePage.png" class="welcomePic img-responsive">
+                    <!-- /.ALERTS -->
+                    <span id="alerts"> </span>
+                    <h2 class="headerWithSpacing">Warnungen</h2>
+                    <p>
+                        Warnungen ziehen die Aufmerksamkeit des Betrachters auf sich. Sie können als Hinweise auf instruktionellen Websiten dienen, oder als Erinnerung, dass, zum Beispiel bei einer Anmeldung, ein Feld noch nicht ausgefüllt wurde.
+                    </p>
+                    <div class="alert alert-success" role="alert">
+                        <strong>Sehr gut!</strong> Dies könnte eine Bestätigung für erfolgreiche Anmeldungen sein.
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <strong>Achte hierauf!</strong> Diese Warnung kann als Erinnerung eingesetzt werden.
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Pass auf!</strong> Möglicherweise hat etwas nicht funktioniert, wie es sollte.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Fehler!</strong> Etwas ist schief gegangen.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap Haupt-JavaScript -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
