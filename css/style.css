@@ -58,11 +58,6 @@ body { padding-top: 60px; }
   height: 100%;
 }
 
-#button{
-    padding-top: 0px;
-    border: none;
-}
-
 .impressum{
     margin-top: 40px;
 }
@@ -260,4 +255,8 @@ body { padding-top: 60px; }
   left: 0;
   min-width: 100%;
   height: 400px;
+}
+
+code{
+    color: darkblue;
 }
